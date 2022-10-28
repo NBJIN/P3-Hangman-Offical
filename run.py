@@ -1,6 +1,15 @@
 import random
 import time
-WORDLISTS = ""
+WORD_LISTS = ""
+SCORE = 6
+CC = "CHARACTERS"
+X = "EXIT"
+CHARACTERS = ""
+EXIT = ""
+CATEGORY = ""
+RANDOM_WORD = ""
+PLAY_GAME = ""
+
 
 # welcome / greeting
 print("Welcome to the Hangman Game!\n")
@@ -13,3 +22,16 @@ print("\nBest of Luck " + name)
 time.sleep(1)
 print("\nThe Hangman Game is about to start.\n")
 time.sleep(1)
+
+# choose a random word
+while SCORE > 0:
+    if WORD_LISTS.upper() == "CC":
+        RANDOM_WORD = random.choice("CATEGORY")
+        break
+    else:
+        WORD_LISTS = input("Slect CATEGORY: CC for CHARACTERS; X for exit, _")
+    if WORD_LISTS == "X".upper()
+        print("Goodbye, please visit again!")
+        PLAY_GAME = False
+        break
+        print("----------")
